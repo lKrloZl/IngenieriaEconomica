@@ -1,0 +1,245 @@
+html {
+    height: 100%;
+    background: linear-gradient(to top, #215e94, #0b3355) no-repeat center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    text-align: center;
+}
+
+body {
+    margin: 0;
+}
+
+/* Personalización de las imagenes*/
+.imgMenu {
+    width: 260px;
+    padding: 3px 40px;
+}
+
+.imgMenu:active {
+    width: 250px;
+}
+
+.imgRegresar,
+.imgImprimir {
+    width: 100px;
+    padding: 3px 40px;
+}
+
+.imgRegresar:active,
+.imgImprimir:active {
+    width: 90px;
+}
+
+/* Personalización de los textos*/
+h1 {
+    font-size: 50px;
+    background: #ccc;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 0.1px #696969;
+}
+
+.menu {
+    background: linear-gradient(45deg, #09ff00, #00f2ff);
+    -webkit-background-clip: text;
+}
+
+.francia {
+    background: linear-gradient(90deg, blue, white, red);
+    -webkit-background-clip: text;
+}
+
+.alemania {
+    background: linear-gradient(black, red, yellow);
+    -webkit-background-clip: text;
+}
+
+.inglesa {
+    background: linear-gradient(blue, white, red);
+    -webkit-background-clip: text;
+}
+
+.flat {
+    background: linear-gradient(black, gold, silver);
+    -webkit-background-clip: text;
+}
+
+h2 {
+    color: #ffffff;
+    text-shadow: 1.5px 1.5px 0.5px #000000;
+    -webkit-text-stroke: 0.1px rgb(105, 105, 105);
+}
+
+h3 {
+    color: #ff6600;
+    text-shadow: 1.5px 1.5px 0.5px #000000;
+}
+
+P {
+    text-align: justify;
+}
+
+/*Contenedor de los datos en DIV*/
+
+.texto {
+    border: solid 3px #27a4ce93;
+    margin: 0 auto;
+    width: 550px;
+    padding: 0px 25px;
+    border-radius: 20px;
+    font-size: 20px;
+    color: #ffee00;
+}
+
+.contenedor {
+    border: solid 3px #27a4ce93;
+    margin: 0 auto;
+    width: 500px;
+    padding: 25px 25px;
+    border-radius: 90px;
+}
+
+input {
+    background-color: transparent;
+    border-top: transparent;
+    border-left: transparent;
+    border-right: transparent;
+    border-bottom-width: thin;
+    border-bottom-color: #00ccff;
+    color: #00ccff;
+    outline: none;
+    font-size: 35px;
+    text-align: center;
+    /*text-transform: uppercase;*/
+}
+
+::placeholder {
+    color: #00ccff88;
+}
+
+.btn {
+    position: relative;
+    border: none;
+    border-radius: 10px;
+    background-size: 300%;
+    padding: 0.5em;
+    width: 180px;
+    font-size: 1.5em;
+    cursor: pointer;
+    font-family: 'popins', sans-serif;
+    text-transform: uppercase;
+    color: white;
+    box-shadow: 2px 2px 4px black;
+    text-shadow: 1px 1px 1px #000000;
+    transition: 0.6s;
+}
+
+.btn:hover {
+    background-position: right;
+    letter-spacing: 0.05em;
+}
+
+.btnCalcular {
+    background-image: linear-gradient(to left, #427197, #00ff269f, #427197);
+}
+
+.btnCalcular:active {
+    background-image: linear-gradient(to right, #2d3a54, #00ff26, #2d3a54);
+}
+
+/*.btnBorrar {
+    background-image: linear-gradient(to left, #427197, #ff00009f, #427197);
+}
+
+.btnBorrar:active {
+    background-image: linear-gradient(to right, #2d3a54, #ff0000, #2d3a54);
+}*/
+
+/*Personalizacion de las tooltips*/
+.tooltip span {
+    background: #ffffff;
+    font-size: 11px;
+    color: #000000;
+    width: 168px;
+    padding: 3px 2px 3px 2px;
+    border-radius: 5px;
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    text-shadow: none;
+    letter-spacing: 0em;
+    text-transform: none;
+}
+
+.tooltip:hover span {
+    visibility: visible;
+    opacity: 0.8;
+    transition: 0.5s;
+}
+
+.tooltip:hover .tooltip-top {
+    bottom: 110%;
+}
+
+.tooltip-top {
+    left: 2%;
+    bottom: 95%;
+}
+
+.tooltip-top::after {
+    content: '';
+    display: block;
+    background: #ffffff;
+    width: 6px;
+    height: 6px;
+    transform: rotate(45deg);
+    position: absolute;
+    left: 7%;
+    bottom: -3px;
+}
+
+/*Personalización de Tablas*/
+table {
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+th {
+    background-color: #28332da4;
+    border-bottom: solid 5px #023b4936;
+    color: orange;
+    padding: 20px;
+    /*border-radius: 5px;*/
+}
+
+td {
+    padding: 15px;
+    color: rgb(255, 217, 0);
+    -webkit-text-stroke: 0.1px black;
+}
+
+tr:nth-child(even) {
+    background-color: #0000001e;
+}
+
+.renta,
+.amortizacion,
+.interes {
+    background-color: #cf25251e;
+}
+
+footer {
+    align-self: flex-end;
+    background: linear-gradient(to bottom, #28332de8, #00000036);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    clear: both;
+    color: white;
+    font-family: cursive;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
